@@ -1,0 +1,82 @@
+﻿.notification{
+    height: 60px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.07);
+    
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    
+    animation: animate 0.5s;
+    
+    transition: 0.5s;
+}
+.notification > div{
+    display:flex;
+    align-items: center;
+}
+.notification > div:nth-child(1){
+    flex-basis: 25px;
+}
+.notification > div:nth-child(2){
+    flex-basis: calc(100% - 40px);
+    padding: 0 10px;
+}
+.notification > div:nth-child(3){
+    flex-basis: 15px;
+    cursor: pointer;
+}
+
+.remove-notification{
+    animation: animate2 0.5s;
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animate2{
+    from{
+        opacity: 1;
+        transform: scale(1);
+        height: 60px;
+    }
+    to{
+        opacity: 0;
+        transform: scale(0);
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+.notification-success{
+    border-color: var(--border-success-color);
+    background: var(--background-success-color);
+    color: var(--border-success-color);
+}
+.notification-info{
+    border-color: var(--border-info-color);
+    background: var(--background-info-color);
+    color: var(--border-info-color);
+}
+.notification-error{
+    border-color: var(--border-error-color);
+    background: var(--background-error-color);
+    color: var(--border-error-color);
+}
+.notification-warning{
+    border-color: var(--border-warning-color);
+    background: var(--background-warning-color);
+    color: var(--border-warning-color);
+}

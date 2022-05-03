@@ -1,0 +1,29 @@
+﻿@using DesignLibrary.Components.MNotification
+
+<div style="position: fixed; top: 10px; left: 10px; z-index: 10; width: 250px; 
+            height: auto; display: flex; flex-direction: column;"
+     >
+    @foreach (MNotificationModel notification in NotificationManager.Notifications)
+    {
+        MNotificationModel m = notification;
+        <MNotification 
+            Style="margin: 5px 0;"
+            Text="@m.Text"
+            Id="Guid.Parse(m.Id.ToString())"
+            Type="m.Type"
+            Time="m.Time"
+            />
+    }
+</div>
+
+@code{
+
+    [Inject]
+    NotificationManager NotificationManager { get; set; }
+
+    protected override void OnInitialized()
+    {
+        NotificationManager.NotifyUpdate += StateHasChanged;
+    }
+
+}

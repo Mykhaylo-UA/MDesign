@@ -1,0 +1,65 @@
+﻿.switchButton{
+    display: inline-flex;
+    overflow: hidden;
+    margin: var(--basic-margin);
+}
+.switchButton > input{
+    display: none;
+}
+.switchButton > label{
+    position: relative;
+    margin-left: 50px;
+    height: 30px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+}
+.switchButton > label > span{
+    display: block;
+    width: 40px;
+    height: 25px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: calc(25px / 2);
+
+    box-sizing: border-box;
+
+    position: absolute;
+    left: -45px;
+    top: calc(50% - 12.5px);
+    z-index: 1;
+
+    transition: 0.5s;
+}
+.switchButton:hover > label > span,
+.switchButton > input:checked ~ label > span{
+    border-color: rgb(var(--primary-color));
+}
+.switchButton > input ~ label > span:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    top: calc(50% - 8.5px);
+    left: 2px;
+    
+    box-sizing: border-box;
+    background: #e7e7e7;
+    z-index: 2;
+    
+    transition: 0.2s ease-in-out;
+
+}
+.switchButton > input:checked ~ label > span:before{
+    transform: translate(15px);
+    background: white;
+}
+.switchButton > input:checked ~ label > span{
+    background: rgb(var(--primary-color));
+}

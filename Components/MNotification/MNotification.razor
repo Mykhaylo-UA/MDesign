@@ -1,0 +1,49 @@
+﻿@using DesignLibrary.Components.Icons
+
+@if (!_remove)
+{
+    <div class="notification @GetClassForType() @(Remove ? "remove-notification" : "")" style="@Style">
+        <div>
+            @if (Type == MNotificationType.Success)
+            {
+                <MSuccessIcon />
+            }
+            else if (Type == MNotificationType.Info)
+            {
+                <MInfoIcon />
+            }
+            else if (Type == MNotificationType.Warning)
+            {
+                <MWarningIcon />
+            }
+            else if (Type == MNotificationType.Error)
+            {
+                <MErrorIcon />
+            }
+        </div>
+        <div>@Text</div>
+        <div @onclick="OnClick"><MCloseCircleIcon Color="@GetColorCloseIconForType()" Style="width: 100%;height: 100%;"/></div>
+    </div>
+}
+
+@code{
+
+    string GetClassForType() =>
+        Type switch{
+            MNotificationType.Success => "notification-success",
+            MNotificationType.Error => "notification-error",
+            MNotificationType.Warning => "notification-warning",
+            MNotificationType.Info => "notification-info",
+            _ => "notification-info"
+            };
+    
+    string GetColorCloseIconForType() =>
+        Type switch{
+            MNotificationType.Success => "var(--border-success-color);",
+            MNotificationType.Error => "var(--border-error-color);",
+            MNotificationType.Warning => "var(--border-warning-color);",
+            MNotificationType.Info => "var(--border-info-color);",
+            _ => "var(--border-info-color);"
+            };
+
+}

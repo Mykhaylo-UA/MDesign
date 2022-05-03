@@ -1,0 +1,77 @@
+.checkboxButton[b-2686ptg6z1]{
+    display: inline-flex;
+    overflow: hidden;
+    margin: var(--basic-margin);
+}
+.checkboxButton > input[b-2686ptg6z1]{
+    display: none;
+}
+.checkboxButton > label[b-2686ptg6z1]{
+    position: relative;
+    padding-left: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+}
+.checkboxButton > label > div[b-2686ptg6z1]{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 5px;
+    top: calc(50% - 10px);
+    z-index: 1;
+
+    transition: 0.2s;
+}
+.checkboxButton:hover > label > div[b-2686ptg6z1],
+.checkboxButton > input:checked ~ label > div[b-2686ptg6z1]{
+    border-color: rgb(var(--primary-color));
+}
+.checkboxButton > input:checked ~ label > div[b-2686ptg6z1]:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 8px;
+
+    border: 3px solid white;
+    border-top: none;
+    border-right: none;
+    
+    border-radius: 1px;
+
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    /*rgb(var(--primary-color))*/
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 2;
+
+    transform: rotate(-45deg);
+
+    animation: animate-b-2686ptg6z1 0.4s;
+}
+.checkboxButton > input:checked ~ label > div[b-2686ptg6z1]{
+    background: rgb(var(--primary-color));
+}
+@keyframes animate-b-2686ptg6z1 {
+    from{
+        transform: scale(0) rotate(-45deg);
+        opacity: 0;
+        
+    }
+    to{
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+}

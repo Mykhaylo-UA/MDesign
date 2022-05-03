@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = DesignLibrary
+build_property.RootNamespace = DesignLibrary
+build_property.ProjectDir = C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MCloseCircleIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNQ2xvc2VDaXJjbGVJY29uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MErrorIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNRXJyb3JJY29uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MInfoIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNSW5mb0ljb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MSuccessIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNU3VjY2Vzc0ljb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MWarningIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNV2FybmluZ0ljb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MNotificationContainer/MNotificationContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNTm90aWZpY2F0aW9uQ29udGFpbmVyXE1Ob3RpZmljYXRpb25Db250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MButton/MButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNQnV0dG9uXE1CdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ae51p5xecw
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MCheckbox/MCheckbox.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNQ2hlY2tib3hcTUNoZWNrYm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2686ptg6z1
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MInputNumber/MInputNumber.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNSW5wdXROdW1iZXJcTUlucHV0TnVtYmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lxinkpe7oj
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MInputSelect/MInputSelect.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNSW5wdXRTZWxlY3RcTUlucHV0U2VsZWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jeri5jjwr1
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MInputText/MInputText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNSW5wdXRUZXh0XE1JbnB1dFRleHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5lsodvqnkb
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MModal/MModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNTW9kYWxcTU1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-h4zttjc9mb
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MNotification/MNotification.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNTm90aWZpY2F0aW9uXE1Ob3RpZmljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-446q27lc09
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MRadioButton/MRadioButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNUmFkaW9CdXR0b25cTVJhZGlvQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-q0f71as8mk
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MSwitch/MSwitch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNU3dpdGNoXE1Td2l0Y2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cdngeez57w
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tomd6q6zjy

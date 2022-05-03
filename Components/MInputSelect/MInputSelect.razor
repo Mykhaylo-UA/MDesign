@@ -1,0 +1,47 @@
+﻿<div class="inputSelect">
+    <input 
+        type="text" 
+        value="@Value" 
+        @oninput="OnChangeInternal"
+        placeholder="@Placeholder"
+        style="@Style"
+        @onfocusin="FocusIn"
+        @onfocusout="FocusOut"
+    />
+    <ul class="@(IsOpen ? "showList" : "removeList")" style="@(allowScroll ? "overflow: auto;" : "")">
+        @if (FilterValues is not null)
+        {
+            @foreach (string value in FilterValues)
+            {
+                string v = value;
+                <li class="@(GetCheckedValue(v) ? "liChecked" : "")" @onclick="e => OnSelect(e, v)">@v</li>
+            }
+        }
+        else
+        {
+            @foreach (string value in Values)
+            {
+                string v = value;
+                <li class="@(GetCheckedValue(v) ? "liChecked" : "")" @onclick="e => OnSelect(e, v)">@v</li>
+            }
+        }
+    </ul>
+</div>
+
+@code{
+
+    bool GetCheckedValue(string value)
+    {
+        if (string.IsNullOrEmpty(Value))
+        {
+            if (string.IsNullOrEmpty(Placeholder)) return false;
+            if (Placeholder == value) return true;
+        }
+        else
+        {
+            if (Value == value) return true;
+        }
+        return false;
+    }
+
+}

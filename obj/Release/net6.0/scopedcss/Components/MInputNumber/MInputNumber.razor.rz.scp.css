@@ -1,0 +1,28 @@
+.inputText[b-lxinkpe7oj]{
+    margin: var(--basic-margin);
+
+    appearance: none;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+.inputText:hover[b-lxinkpe7oj]{
+    border-color: rgb(var(--primary-color));
+}
+.inputText:focus[b-lxinkpe7oj],
+.inputText:focus-visible[b-lxinkpe7oj] {
+    outline: none;
+    border-color: rgb(var(--primary-color));
+    box-shadow: 0 0 5px 1px rgb(var(--primary-color), 0.3);
+}

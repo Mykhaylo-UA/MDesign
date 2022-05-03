@@ -1,0 +1,31 @@
+﻿html, body{
+    margin: 0;
+    padding: 100px;
+    background: rgb(255, 255, 255);
+    --primary-color: 24, 144, 255;
+    --primary-color-hover: 78, 189, 255;
+    --color-text-over-primary: white;
+    --color-text-basic: black;
+    
+    --border-color:#eaeaea;
+    
+    --basic-shadow: 0 0 1px 1px rgb(var(--primary-color), 0.1);
+    --basic-margin: 2px 0;
+    
+    --background-success-color: #F2FFF7;
+    --border-success-color: #76D8A3;
+    --background-info-color: #F8FAFF;
+    --border-info-color: #23A6F0;
+    --background-warning-color: #FFF6EF;
+    --border-warning-color: #E77C40;
+    --background-error-color: #FFDEDE;
+    --border-error-color: #DF1E1E;
+    
+    
+    font-family: Montserrat Rubik Inter Helvetica;
+}
+*{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}

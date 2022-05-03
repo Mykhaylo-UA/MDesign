@@ -1,0 +1,52 @@
+﻿@page "/"
+@using DesignLibrary.Components.MButton;
+@using DesignLibrary.Components.MButton.Enums
+@using DesignLibrary.Components.MInputText;
+@using DesignLibrary.Components.MRadioButton;
+@using DesignLibrary.Components.MSwitch;
+@using DesignLibrary.Components.MNotification;
+@using DesignLibrary.Components.MNotificationContainer;
+@using DesignLibrary.Components.MInputSelect;
+@using DesignLibrary.Components.MCheckbox;
+@using DesignLibrary.Components.MInputNumber
+@using DesignLibrary.Components.MModal
+<MNotificationContainer />
+
+
+<div style="display: flex; flex-direction: column; width: 200px;">
+    <MButton>Secondary</MButton>
+    <MButton ButtonType="MButtonType.Primary">Primary</MButton>
+    <MInputSelect Values="@values" Placeholder="Select">
+    </MInputSelect>
+    <MInputNumber Format="+nnn (nn) nn nn nnn" Placeholder="+nnn (nn) nn nn nnn"/>
+    <MInputNumber Format="nnn-nn=nn nn nnn" Placeholder="nnn-nn=nn nn nnn"/>
+    <MInputText Placeholder="Input text"/>
+    <MButton OnClick="Click">Notification add</MButton>
+    <MRadioButton NameRadioGroup="radio" Label="Radio 1"/>
+    <MRadioButton NameRadioGroup="radio" Label="Radio 2"/>
+    <MRadioButton NameRadioGroup="radio" Label="Radio 3"/>
+
+    <MCheckbox Label="Checkbox 1"/>
+    <MCheckbox Label="Checkbox 2"/>
+
+    <MSwitch Label="Switch"/>
+
+</div>
+@* <MNotification /> *@
+
+@code{
+    string value = "";
+    [Inject] NotificationManager _notificationManager { get; set; }
+
+    List<string> values = new()
+    {
+        "default", "default 1", "default 2", "ooooo", "aaaaa", "gggggg", "sdasdasd",
+        "default", "default 1", "default 2", "ooooo", "aaaaa", "gggggg", "sdasdasd"
+    };
+    
+    void Click(MouseEventArgs obj)
+    {
+        Random r = new Random();
+        _notificationManager.AddNotification("Authorization is success.", (MNotificationType)r.Next(0, 3), 2000);
+    }
+}

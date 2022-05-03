@@ -1,0 +1,1 @@
+C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\bin\Release\net6.0\publish\web.config
