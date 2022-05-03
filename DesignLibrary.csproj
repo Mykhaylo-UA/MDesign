@@ -19,4 +19,7 @@
     <ItemGroup>
       <AdditionalFiles Include="Pages\MButton\MButton.razor" />
     </ItemGroup>
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\MButton\MButton.razor" />
+    </ItemGroup>
 </Project>
