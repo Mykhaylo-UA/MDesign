@@ -11,6 +11,12 @@
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />
     </ItemGroup>
     <ItemGroup>
-        <None Update="Components/*.razor.css"/>
+        <None Update="Components/*.razor.css" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Pages\MButton\MButton.razor.css" />
+    </ItemGroup>
+    <ItemGroup>
+      <AdditionalFiles Include="Pages\MButton\MButton.razor" />
     </ItemGroup>
 </Project>

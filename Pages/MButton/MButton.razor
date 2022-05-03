@@ -1,0 +1,29 @@
+﻿@using DesignLibrary.Pages.MButton.Enums
+<div class="@($"button {ButtonSizeClass(ButtonSize)} {ButtonTypeClass(ButtonType)}")" 
+     @onclick="OnClickInternal"
+     style="@Style">
+    <span>@ChildContent</span>
+    <div class="wave"
+         style="left: @($"{_wave.X}px"); top: @($"{_wave.Y}px")">
+    </div>
+</div>
+
+@code{
+
+    string ButtonSizeClass(MButtonSize buttonSize)
+        => buttonSize switch
+            {
+                MButtonSize.Small => "button-small",
+                MButtonSize.Default => "button-default",
+                MButtonSize.Large => "button-large",
+                _ => "button-default"
+            };
+    
+    string ButtonTypeClass(MButtonType buttonType)
+        => buttonType switch
+        {
+            MButtonType.Primary => "button-primary",
+            MButtonType.Secondary => "button-secondary",
+            _ => "button-secondary"};
+
+}

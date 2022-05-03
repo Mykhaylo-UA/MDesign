@@ -1,6 +1,6 @@
 ﻿@page "/"
-@using DesignLibrary.Components.MButton;
-@using DesignLibrary.Components.MButton.Enums
+@using DesignLibrary.Pages.MButton;
+@using DesignLibrary.Pages.MButton.Enums
 @using DesignLibrary.Components.MInputText;
 @using DesignLibrary.Components.MRadioButton;
 @using DesignLibrary.Components.MSwitch;
@@ -15,7 +15,7 @@
 
 <div style="display: flex; flex-direction: column; width: 200px;">
     <MButton>Secondary</MButton>
-    <MButton ButtonType="MButtonType.Primary">Primary</MButton>
+    <MButton ButtonType="@MButtonType.Primary">Primary</MButton>
     <MInputSelect Values="@values" Placeholder="Select">
     </MInputSelect>
     <MInputNumber Format="+nnn (nn) nn nn nnn" Placeholder="+nnn (nn) nn nn nnn"/>
