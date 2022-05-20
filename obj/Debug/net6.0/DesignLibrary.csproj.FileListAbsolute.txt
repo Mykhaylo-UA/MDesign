@@ -821,3 +821,6 @@ C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\sco
 C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MInputSelect\MInputSelect.razor.rz.scp.css
 C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MCheckbox\MCheckbox.razor.rz.scp.css
 C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MModal\MModal.razor.rz.scp.css
+C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MDatePicker\MDatePicker.razor.rz.scp.css
+C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MTable\MTable.razor.rz.scp.css
+C:\Users\Mykhailo\RiderProjects\DesignLibrary\DesignLibrary\obj\Debug\net6.0\scopedcss\Components\MTable\MTableCell.razor.rz.scp.css

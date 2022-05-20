@@ -64,6 +64,7 @@ public partial class MInputSelect: ComponentBase
     {
         Value = value;
         _change = true;
+        Console.WriteLine(value);
         await ValueChanged.InvokeAsync($"{value}");
     }
 }

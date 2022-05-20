@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MArrow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNQXJyb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/Icons/MCloseCircleIcon.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uc1xNQ2xvc2VDaXJjbGVJY29uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,13 +58,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MButton/MButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNQnV0dG9uXE1CdXR0b24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ae51p5xecw
-
 [C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MCheckbox/MCheckbox.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNQ2hlY2tib3hcTUNoZWNrYm94LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-2686ptg6z1
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MDatePicker/MDatePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNRGF0ZVBpY2tlclxNRGF0ZVBpY2tlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-5f9qsrcgjt
 
 [C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MInputNumber/MInputNumber.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNSW5wdXROdW1iZXJcTUlucHV0TnVtYmVyLnJhem9y
@@ -89,6 +93,18 @@ build_metadata.AdditionalFiles.CssScope = b-q0f71as8mk
 [C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MSwitch/MSwitch.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNU3dpdGNoXE1Td2l0Y2gucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cdngeez57w
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MTable/MTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNVGFibGVcTVRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-p546ol8j0n
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Components/MTable/MTableCell.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNVGFibGVcTVRhYmxlQ2VsbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6c4ea3gqt7
+
+[C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Pages/MButton/MButton.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUJ1dHRvblxNQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-hq9d61g3oa
 
 [C:/Users/Mykhailo/RiderProjects/DesignLibrary/DesignLibrary/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

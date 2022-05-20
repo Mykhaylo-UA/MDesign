@@ -14,12 +14,6 @@
         <None Update="Components/*.razor.css" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Pages\MButton\MButton.razor.css" />
-    </ItemGroup>
-    <ItemGroup>
-      <AdditionalFiles Include="Pages\MButton\MButton.razor" />
-    </ItemGroup>
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="Components\MButton\MButton.razor" />
+      <_ContentIncludedByDefault Remove="Pages\MButton\MButton.razor" />
     </ItemGroup>
 </Project>

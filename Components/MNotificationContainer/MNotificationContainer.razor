@@ -7,6 +7,7 @@
     {
         MNotificationModel m = notification;
         <MNotification 
+            @key="notification.Id"
             Style="margin: 5px 0;"
             Text="@m.Text"
             Id="Guid.Parse(m.Id.ToString())"

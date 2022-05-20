@@ -1,25 +1,70 @@
-﻿.modal > .background {
+﻿.modal{
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     z-index: 5;
 }
-.modal > .modal-container{
-    min-width: 300px;
-    min-height: 200px;
-    background: white;
 
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    z-index: 6;
+.modal > .background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0,0,0);
+    z-index: 5;
+    visibility: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.modal > .modal-container{
+    min-width: 200px;
+    max-width: 95vw;
+    
+    min-height: 100px;
+    max-height: calc(100vh - 20vh);
+    height: min-content;
+    
+    margin-top: 10vh;
+    background: white;
+    z-index: inherit;
     
     border-radius: 5px;
     box-shadow: 0 1px 10px 5px rgba(var(--primary-color), 0.25);
+    visibility: hidden;
+
+    overflow: auto;
+    
+    transition: 0.4s;
+}
+.modal-show > .background{
+    visibility: visible;
+    opacity: 0.6;    
+}
+.modal-show > .modal-container{
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+.modal-hide{
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal-hide > .background{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-hide > .modal-container{
+    visibility: hidden;
+    transform: translateY(-70px);
+    pointer-events: none;
+    opacity: 0;
 }
 
 .modal-container > .header{
@@ -31,7 +76,18 @@
     display: flex;
     align-items: center;
     
-    padding: 0 10px;
+    padding: 0 20px;
     
+    box-sizing: border-box;
+}
+.modal-container > .content{
+    width: 100%;
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    padding: 10px 20px;
+
     box-sizing: border-box;
 }

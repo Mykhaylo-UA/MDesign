@@ -18,14 +18,17 @@ public partial class MNotification : ComponentBase
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(Time);
-        Remove = true;
-        StateHasChanged();
+        if (Time != 0)
+        {
+            await Task.Delay(Time);
+            Remove = true;
+            StateHasChanged();
 
-        await Task.Delay(475);
-        _remove = true;
-        StateHasChanged();
-        NotificationManager.DeleteNotification(Id);
+            await Task.Delay(475);
+            _remove = true;
+            StateHasChanged();
+            NotificationManager.DeleteNotification(Id);
+        }
     }
 
 

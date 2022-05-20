@@ -10,12 +10,41 @@
 @using DesignLibrary.Components.MCheckbox;
 @using DesignLibrary.Components.MInputNumber
 @using DesignLibrary.Components.MModal
-<MNotificationContainer />
+@using DesignLibrary.Components.MDatePicker
+@using DesignLibrary.Components.MTable
+
+<MNotificationContainer/>
 
 
 <div style="display: flex; flex-direction: column; width: 200px;">
-    <MButton>Secondary</MButton>
-    <MButton ButtonType="@MButtonType.Primary">Primary</MButton>
+    <MTable>
+        <thead>
+            <tr>
+                <MTableCell></MTableCell>
+                <MTableCell>Name</MTableCell>
+                <MTableCell>Text</MTableCell>
+                <MTableCell>Action</MTableCell>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <MTableCell ElementOnCentered><MCheckbox/></MTableCell>
+                <MTableCell>Name</MTableCell>
+                <MTableCell>Lorem dsasd sa as dasd as ddewr ewrrw we rw</MTableCell>
+                <MTableCell ElementOnCentered><MSwitch/></MTableCell>
+            </tr>
+            <tr>
+                <MTableCell ElementOnCentered><MCheckbox/></MTableCell>
+                <MTableCell>Name</MTableCell>
+                <MTableCell>Lorem dsasd sa as dasd as ddewr ewrrw we rw</MTableCell>
+                <MTableCell ElementOnCentered><MSwitch/></MTableCell>
+            </tr>
+        </tbody>
+    </MTable>
+
+    <MDatePicker @bind-Value="@_dateTime"/>
+    <MButton OnClick="() => { showModal = true; }">Secondary</MButton>
+    <MButton OnClick="() => Console.WriteLine()" ButtonType="@MButtonType.Primary">Primary</MButton>
     <MInputSelect Values="@values" Placeholder="Select">
     </MInputSelect>
     <MInputNumber Format="+nnn (nn) nn nn nnn" Placeholder="+nnn (nn) nn nn nnn"/>
@@ -31,22 +60,61 @@
 
     <MSwitch Label="Switch"/>
 
+    <MModal @bind-Show="showModal" Title="Title">
+        <MTable>
+                <thead>
+                    <tr>
+                        <MTableCell></MTableCell>
+                        <MTableCell>Name</MTableCell>
+                        <MTableCell>Text</MTableCell>
+                        <MTableCell>Action</MTableCell>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <MTableCell ElementOnCentered><MCheckbox/></MTableCell>
+                        <MTableCell>Name</MTableCell>
+                        <MTableCell>Lorem dsasd sa as dasd as ddewr ewrrw we rw</MTableCell>
+                        <MTableCell ElementOnCentered><MSwitch/></MTableCell>
+                    </tr>
+                    <tr>
+                        <MTableCell ElementOnCentered><MCheckbox/></MTableCell>
+                        <MTableCell>Name</MTableCell>
+                        <MTableCell>Lorem dsasd sa as dasd as ddewr ewrrw we rw</MTableCell>
+                        <MTableCell ElementOnCentered><MSwitch/></MTableCell>
+                    </tr>
+                </tbody>
+            </MTable>
+
+    </MModal>
+
+    @_dateTime
 </div>
-@* <MNotification /> *@
 
 @code{
     string value = "";
-    [Inject] NotificationManager _notificationManager { get; set; }
+    DateTime? _dateTime = DateTime.Now;
+
+    [Inject]
+    NotificationManager _notificationManager { get; set; }
+
+    bool showModal = false;
 
     List<string> values = new()
     {
         "default", "default 1", "default 2", "ooooo", "aaaaa", "gggggg", "sdasdasd",
         "default", "default 1", "default 2", "ooooo", "aaaaa", "gggggg", "sdasdasd"
     };
-    
+
     void Click(MouseEventArgs obj)
     {
-        Random r = new Random();
-        _notificationManager.AddNotification("Authorization is success.", (MNotificationType)r.Next(0, 3), 2000);
+        Random r = new();
+        _notificationManager.AddNotification("Authorization is success.", (MNotificationType) r.Next(0, 3), 2000);
     }
+
+    void ShowModal()
+    {
+        showModal = true;
+    }
+
 }
