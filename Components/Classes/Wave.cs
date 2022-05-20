@@ -1,4 +1,6 @@
-﻿namespace DesignLibrary.Components.Classes;
+﻿using System;
+
+namespace DesignLibrary.Components.Classes;
 
 public class Wave
 {

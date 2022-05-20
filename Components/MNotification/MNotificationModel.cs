@@ -1,4 +1,6 @@
-﻿namespace DesignLibrary.Components.MNotification;
+﻿using System;
+
+namespace DesignLibrary.Components.MNotification;
 
 public class MNotificationModel
 {
